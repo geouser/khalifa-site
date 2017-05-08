@@ -14,6 +14,48 @@ body {
 }
 
 
+.section-title {
+  text-align: center;
+  padding: 60px 0;
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-size: 40px;
+    color: $text;
+    font-family: $v;
+    font-weight: normal;
+  }
+
+  &.light {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      color: #fff;
+    }
+  }
+}
+
+
+.section-button {
+  padding: 70px 0;
+
+  .button {
+    width: 390px;
+    max-width: 100%;
+  }
+}
+
+
+
 // lAYOUT
 // ---------------------------
 .wrapper {

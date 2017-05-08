@@ -1,0 +1,32 @@
+.clients-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding-bottom: 70px;
+
+
+
+    .logos {
+        &-item {
+            img {
+                margin: 0 auto;
+            }
+
+            .normal {
+                display: block;
+            }
+            .hover {
+                display: none;
+            }
+
+            &:hover {
+                .normal {
+                    display: none;
+                }
+                .hover {
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,10 @@
 /* Tools styles */
 @import '01-tools/normalize';
-@import '01-tools/flexboxgrid';
+@import '01-tools/flex-grid';
 @import '01-tools/fonts';
 @import '01-tools/slick';
 @import '01-tools/slick-theme';
-/*@import '01-tools/font-awesome';*/
+@import '01-tools/font-awesome';
 @import '01-tools/fancybox';
 
 /*Base styles*/
@@ -23,3 +23,4 @@
 
 
 /*Pages styles*/
+@import '04-pages/page-main';
