@@ -15,6 +15,15 @@ body {
 
 .section {
   overflow: hidden;
+
+  &.has-padding {
+    padding: 70px 0;
+  }
+
+  &.relative {
+    position: relative;
+    overflow: visible;
+  }
 }
 
 .section-title {
@@ -62,6 +71,11 @@ body {
 .section-pagination {
   padding: 70px 0;
 
+  .wp-pagenavi {
+    position: relative;
+    display: inline-block;
+  }
+
   .page,
   .current,
   .previouspostslink,
@@ -92,6 +106,9 @@ body {
   .previouspostslink,
   .nextpostslink {
     font-size: 0;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
 
     &:before {
       display: block;
@@ -99,7 +116,7 @@ body {
       font-size: inherit;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      font-size: 20px;
+      font-size: 26px;
       line-height: inherit;
     }
 
@@ -107,6 +124,15 @@ body {
       background-color: transparent;
       color: $brown;
     }
+  }
+
+  .previouspostslink {
+    right: 100%;
+    margin-right: 2px;
+  }
+  .nextpostslink {
+    left: 100%;
+    margin-left: 2px;
   }
 
   .previouspostslink:before {
@@ -118,10 +144,13 @@ body {
 }
 
 
+.grey-bg {
+  background-color: #efefef;
+}
+
 
 
 .article {
-  padding: 60px 0;
   font-size: 20px;
   text-align: left;
 
