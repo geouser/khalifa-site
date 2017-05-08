@@ -59,6 +59,30 @@ body {
 
 
 
+
+.article {
+  padding: 60px 0;
+  font-size: 20px;
+  text-align: left;
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  & > *:not(:last-child) {
+    margin-bottom: 1.4em;
+  }
+
+  &.column-article  {
+    columns: 2;
+    column-gap: 30px;
+  }
+}
+
+
+
 // lAYOUT
 // ---------------------------
 .wrapper {
