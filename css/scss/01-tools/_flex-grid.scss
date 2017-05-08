@@ -1,5 +1,5 @@
 /* Uncomment and set these variables to customize the grid. */
-
+$gutter: 15px;
 
 .row {
   box-sizing: border-box;
@@ -15,6 +15,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
 }
 
 .row.reverse {
@@ -49,8 +51,8 @@
   -ms-flex: 0 0 auto;
   -webkit-box-flex: 0;
   flex: 0 0 auto;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: $gutter;
+  padding-left: $gutter;
 }
 
 .col-xs {
@@ -210,6 +212,12 @@
   -ms-flex-align: center;
   -webkit-box-align: center;
   align-items: center;
+}
+
+.stretch-xs {
+  -ms-flex-align: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
 }
 
 .bottom-xs {
