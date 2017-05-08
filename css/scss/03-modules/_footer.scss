@@ -4,7 +4,7 @@
     background-color: #191919;
     border-left: 80px solid transparent;
     border-right: 80px solid transparent;
-    padding: 40px 0;
+    padding: 36px 0;
     font-size: 20px;
 
     &__logo {
@@ -30,10 +30,19 @@
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
         transform: translateY(-50%);
+        font-size: 18px;
+
+        a {
+            color: inherit;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     &__socials {
-        font-size: 25px;
+        font-size: 28px;
         text-align: center;
         padding: 0 15px;
 
@@ -52,10 +61,31 @@
         img {
             display: inline-block;
             vertical-align: middle;
+            margin-right: 5px;
         }
         a {
             display: inline-block;
             vertical-align: middle;
+        }
+    }
+
+    &__request {
+        .button {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: normal;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #fff;
+                color: #191919;
+            }
         }
     }
 }
