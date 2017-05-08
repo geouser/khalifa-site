@@ -129,6 +129,35 @@
                     color: #996e31;
                 }
             }
+            ul {
+                padding: 60px 20%;
+                -webkit-column-count: 3; /* Chrome, Safari, Opera */
+                -moz-column-count: 3; /* Firefox */
+                column-count: 3;
+                column-gap: 80px;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: rgba(24,27,41, .9);
+                text-align: left;
+                visibility: hidden;
+                transition: all .2s;
+                li {
+                    margin: 0 0px;
+                    display: block;
+                    a {
+                        font-size: 16px;
+                        transition: all 0s;
+                    }
+                }
+            }
+            &:hover {
+                ul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
         }
     }
 }
