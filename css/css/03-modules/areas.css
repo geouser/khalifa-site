@@ -1,0 +1,16 @@
+.area {
+  position: relative; }
+  .area strong {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-size: cover;
+    background-position: center center; }
+  .area:after {
+    content: '';
+    display: block;
+    padding-top: 40%; }
