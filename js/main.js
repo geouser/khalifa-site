@@ -53,15 +53,10 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   MENU TOGGLE
     ---------------------------*/
-    $('.menu-button').on('click', function(event) {
+    $('.menu-toggle').on('click', function(event) {
         event.preventDefault();
         $(this).toggleClass('open');
-        $(this).siblings('header').toggleClass('open');
-        if ($('header').hasClass('open')) {
-                $('body').css('overflow', 'hidden');
-            } else {
-                $('body').css('overflow', 'visible');
-            }
+        $('.header__bottom').toggleClass('open');
     });
 
 

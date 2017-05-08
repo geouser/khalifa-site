@@ -8,6 +8,9 @@ body {
 
 body {
   font-family: $rc;
+  padding-top: 70px;
+  font-size: 20px;
+  color: #000;
 }
 
 
@@ -21,6 +24,9 @@ body {
   max-width: 100%;
 }
 
+h1 {
+  font: 48px $v;
+}
 
 
 /* Set default opacity for input's placeholders equal to 1 */
