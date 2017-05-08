@@ -1,3 +1,33 @@
+.section-person {
+    .wrapper {
+        position: relative;
+        padding: 130px 0;
+        text-align: left;
+    }
+
+    .person-img {
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+    }
+
+
+    .person-title {
+        font-family: $v;
+        font-size: 30px;
+    }
+
+    .person-position {
+        font-weight: 700;
+        color: $grey;
+        font-style: italic;
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+}
+
+
+
 .why-block {
     &__link {
         display: block;
