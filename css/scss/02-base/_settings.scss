@@ -59,6 +59,66 @@ body {
 
 
 
+.section-pagination {
+  padding: 70px 0;
+
+  .page,
+  .current,
+  .previouspostslink,
+  .nextpostslink {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+    min-width: 30px;
+    padding: 0 3px;
+    text-align: center;
+    color: $text;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin: 0 -1px;
+
+    &:hover {
+      color: #fff;
+      background-color: $text;
+    }
+  }
+
+  .current {
+    background-color: $text;
+    color: #fff;
+  }
+
+  .previouspostslink,
+  .nextpostslink {
+    font-size: 0;
+
+    &:before {
+      display: block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-size: 20px;
+      line-height: inherit;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $brown;
+    }
+  }
+
+  .previouspostslink:before {
+    content: '\f104';
+  }
+  .nextpostslink:before {
+    content: '\f105';
+  }
+}
+
+
+
 
 .article {
   padding: 60px 0;
