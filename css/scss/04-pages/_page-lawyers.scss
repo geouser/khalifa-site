@@ -36,6 +36,9 @@
 
 
 .person-info {
+    text-align: left;
+    display: block;
+
     span {
         display: block;
     }
@@ -95,6 +98,38 @@
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+
+
+
+    .other-features {
+        &__title {
+            color: $grey;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        ul li {
+            padding-left: 35px;
+            list-style: none;
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $text;
+                position: absolute;
+                left: 0;
+                top: 13px;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
         }
     }
 }
