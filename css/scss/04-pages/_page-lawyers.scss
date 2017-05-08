@@ -1,0 +1,132 @@
+.cards-grid {
+    @include flex($ai: stretch);
+    margin-bottom: -20px;
+}
+
+
+.person-card {
+    width: 50%;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    padding: 50px 0 70px 95px;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+
+    &:hover {
+        background-color: #E7E7E9;
+
+        .person-info__link {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+
+
+    .person-photo {
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        max-width: 50%;
+        z-index: -1;
+    }
+}
+
+
+.person-info {
+    span {
+        display: block;
+    }
+
+    &__name {
+        font-size: 30px;
+        font-family: $v;
+        text-transform: uppercase;
+    }
+
+    &__position {
+        font-size: 24px;
+        color: $grey;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    &__contacts {
+        padding: 50px 0;
+    }
+
+
+    &__socials {
+        margin-bottom: 50px;
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+            background-color: $grey;
+            color: #fff;
+            line-height: 40px;
+            text-align: center;
+            margin-right: 18px;
+            font-size: 26px;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            &:before {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 30px;
+        font-weight: 700;
+        color: $text;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.contact-item {
+    display: block;
+
+    &:not(:last-child) {
+        margin-bottom: 26px;
+    }
+
+    &-title {
+        text-transform: uppercase;
+    }
+}
+
+
+
+a.fa-twitter:hover {
+    background-color: #4099FF;
+}
+a.fa-instagram:hover {
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+}
+a.fa-facebook:hover {
+    background-color: #3B5998;
+}
+a.fa-linkedin:hover {
+    background-color: #0077B5;
+}
+
+a.fa-google-plus:hover {
+    background-color: #DB4437;
+}
