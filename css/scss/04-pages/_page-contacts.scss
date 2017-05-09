@@ -1,0 +1,157 @@
+.contacts-section {
+    @include flex($ai: stretch);
+}
+
+.contact-content {
+    padding: 190px 15px 65px 95px;
+    width: 50%;
+    @include flex($ai: flex-start);
+
+    @media (max-width: 1700px) {
+        padding-left: 50px;
+        font-size: 18px;
+    }
+
+    @media (max-width: 1500px) {
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+
+    @media (max-width: 599px) {
+        padding: 60px 15px;
+    }
+}
+
+.contact-widget {
+    width: 50%;
+    padding-right: 15px;
+
+    @media (max-width: 599px) {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: $v;
+        margin-bottom: 40px;
+
+        @media (max-width: 1700px) {
+            font-size: 35px;
+        }
+
+        @media (max-width: 1500px) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    address {
+        font-style: normal;
+        color: $grey;
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 40px;
+        @media (max-width: 1700px) {
+            font-size: 22px;
+        }
+
+        @media (max-width: 1500px) {
+            font-size: inherit;
+        }
+    }
+
+    &__numbers {
+        color: $grey;
+        margin-bottom: -25px;
+
+        .item {
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            text-transform: uppercase;
+            color: $text;
+        }
+    }
+
+    .timing-list {
+        li {
+            display: block;
+            margin-bottom: 25px;
+
+            strong {
+                color: $grey;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.contact-map {
+    width: 50%;
+    position: relative;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+
+    .map {
+        position: absolute!important;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        @media (max-width: 1200px) {
+            position: relative!important;
+            height: 350px;
+        }
+    }
+}
+
+
+.contact-us-section {
+    padding-top: 65px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-title {
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+}
+
+.contact-us-form {
+    width: 810px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+
+    @media (max-width: 599px) {
+        .form-group:nth-child(3) {
+            margin-bottom: 20px;
+        }
+    }
+
+    input,
+    textarea {
+        background-color: #fff;
+    }
+
+    textarea {
+        height: 120px;
+    }
+}
