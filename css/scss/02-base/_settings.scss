@@ -25,6 +25,9 @@ body {
 
   &.has-padding {
     padding: 70px 0;
+    @media (max-width: 600px) {
+    padding: 40px 0;
+  }
   }
 
   &.relative {
@@ -66,7 +69,9 @@ body {
 
 .section-button {
   padding: 70px 0;
-
+  @media (max-width: 600px) {
+    padding: 40px 0;
+  }
   .button {
     width: 390px;
     max-width: 100%;
@@ -80,7 +85,9 @@ body {
 
 .section-pagination {
   padding: 70px 0;
-
+  @media (max-width: 600px) {
+    padding: 40px 0;
+  }
   .wp-pagenavi {
     position: relative;
     display: inline-block;
