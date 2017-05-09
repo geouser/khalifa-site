@@ -98,6 +98,37 @@ jQuery(document).ready(function($) {
 
 
     /*---------------------------
+                                  Gallery slider
+    ---------------------------*/
+    $('.gallery-slider').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    })
+
+    $(document).on('click', '.js-custom-slider', function(event) {
+        event.preventDefault();
+        var image = $(this).attr('data-src');
+
+        $('.custom-gallery-preview').html('').append('<img src="' + image + '">');
+    });
+
+    /*---------------------------
                                   Fancybox
     ---------------------------*/
     $('.fancybox').fancybox({
