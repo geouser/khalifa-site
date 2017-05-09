@@ -4,6 +4,13 @@
         padding: 130px 15px;
         text-align: left;
         z-index: 1;
+
+        @media (max-width: 991px) {
+            padding: 70px 15px 70px;
+        }
+        @media (max-width: 599px) {
+            padding-bottom: 0;
+        }
     }
 
     .person-img {
@@ -15,6 +22,17 @@
         @media (max-width: 1200px) {
             max-width: 50%;
         }
+
+        @media (max-width: 991px) {
+            max-width: 45%;
+        }
+
+        @media (max-width: 599px) {
+            position: static;
+            display: block;
+            margin: 15px 0 0 auto;
+            max-width: 270px;
+        }
     }
 
 
@@ -22,6 +40,10 @@
         font-family: $v;
         font-size: 30px;
         font-weight: normal;
+
+        @media (max-width: 599px) {
+            font-size: 25px;
+        }
     }
 
     .person-position {
@@ -30,12 +52,41 @@
         font-style: italic;
         font-size: 24px;
         margin-bottom: 25px;
+
+        @media (max-width: 599px) {
+            font-size: 20px;
+        }
     }
 }
 
 
 
 .why-block {
+    @media (max-width: 991px) {
+        padding: 0 5px;
+
+
+        .image-column,
+        .links-column {
+            -ms-flex-preferred-size: 100%;
+            -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .links-column {
+            @include flex($ai: stretch);
+            padding-top: 5px;
+        }
+    }
+
+    @media (max-width: 599px) {
+        .links-column {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
     &__link {
         display: block;
         padding: 32px 65px;
@@ -45,6 +96,27 @@
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
         font-size: 24px;
+
+        @media (max-width: 1200px) {
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 18px;
+            width: -webkit-calc(50% - 20px);
+            width: calc(50% - 20px);
+            margin: 10px!important;
+        }
+
+        @media (max-width: 599px) {
+            padding: 10px;
+        }
+
+        @media (max-width: 450px) {
+            width: 100%;
+            margin: 10px 0!important;
+        }
 
         &:not(:last-child) {
             margin-bottom: 30px;
@@ -80,6 +152,19 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
+
+        @media (max-width: 991px) {
+            width: 100%;
+            position: static;
+            border-width: 10px;
+
+            &:before {
+                content: '';
+                width: 100%;
+                padding-top: 40%;
+                display: block;
+            }
+        }
     }
 
 
@@ -101,8 +186,18 @@
 
     .logos {
         &-item {
+            padding: 0 10px;
+            max-width: 25%;
+
+            @media (max-width: 599px) {
+                max-width: 50%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
             img {
                 margin: 0 auto;
+                max-width: 100%;
             }
 
             .normal {
