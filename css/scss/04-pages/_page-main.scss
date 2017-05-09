@@ -1,14 +1,20 @@
 .section-person {
     .wrapper {
         position: relative;
-        padding: 130px 0;
+        padding: 130px 15px;
         text-align: left;
+        z-index: 1;
     }
 
     .person-img {
         position: absolute;
         bottom: 0;
         right: 15px;
+        z-index: -1;
+
+        @media (max-width: 1200px) {
+            max-width: 50%;
+        }
     }
 
 
