@@ -1,9 +1,7 @@
          
 .header {
     @include position(fixed, 0, 0, auto, 0);
-    @include transition(all, .4s);
     z-index: 100;
-    width: 100%;
     
     color: #181b29;
     background: #fff;
