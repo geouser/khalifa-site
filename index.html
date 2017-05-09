@@ -35,7 +35,7 @@
                             <li><a href="">Arabic</a></li>
                             <li class="active"><a href="">English</a></li>
                         </ul>
-                        <button href="" class="header__control">
+                        <button href="#modal-popup" class="header__control fancybox">
                             <span>Send Request!</span>
                         </button>
                         <a href="" class="header__control soc">
@@ -260,7 +260,29 @@
             </div>
         </footer>
 
-        <div id="modal-popup" class="fncb-hide zoom-anim-dialog popup"></div>
+        <div id="modal-popup" class="fncb-hide zoom-anim-dialog popup">
+            <div class="popup-heading">Contact us!</div>
+            
+            <div class="popup-body">
+                <form action="" class="case-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" placeholder="Your Contact Phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Question"></textarea>
+                    </div>
+                    <div class="form-group button-group">
+                        <button class="button">Contact</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <div id="modal-popup-ok" class="fncb-hide zoom-anim-dialog popup result">
             <p class="heading">Спасибо!</p>
