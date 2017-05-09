@@ -23,6 +23,15 @@
             margin: 10px auto 0;
             background: #996e31;
         }
+        @media (max-width: 1200px) {
+            font-size: 26px;
+        }
+        @media (max-width: 800px) {
+            font-size: 22px;
+        }
+        @media (max-width: 600px) {
+            font-size: 18px;
+        }
     }
     &:after {
         content: '';
