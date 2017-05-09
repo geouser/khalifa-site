@@ -81,6 +81,21 @@ jQuery(document).ready(function($) {
         $('.header__bottom').toggleClass('open');
     });
 
+    $('.sub-menu > a').click(function(){
+        event.preventDefault();
+        $(this).siblings('ul').toggleClass('opened');
+    });
+
+    $('.offer--slider').slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        speed: 900,
+        autoplaySpeed: 5000,
+        pauseOnHover: false,
+        fade: true
+    });
+
 
     /*---------------------------
                                   Fancybox

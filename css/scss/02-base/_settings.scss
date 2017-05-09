@@ -11,6 +11,9 @@ body {
   padding-top: 70px;
   font-size: 20px;
   color: #000;
+  @media (max-width: 1200px) {
+      padding-top: 50px;
+  }
 }
 
 .section {
@@ -66,7 +69,10 @@ body {
   }
 }
 
-
+.row.no-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .section-pagination {
   padding: 70px 0;
@@ -193,6 +199,21 @@ body {
 
 h1 {
   font: 48px $v;
+  @media (max-width: 1600px) {
+    font-size: 44px;
+  }
+  @media (max-width: 1500px) {
+    font-size: 36px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 32px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 28px;
+  }
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 }
 
 
