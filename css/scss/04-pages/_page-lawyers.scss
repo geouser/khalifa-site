@@ -5,7 +5,6 @@
 
 
 .person-card {
-    width: 50%;
     -webkit-transition: background-color 0.3s ease;
     -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
@@ -13,7 +12,12 @@
     position: relative;
     margin-bottom: 20px;
     z-index: 1;
-
+    @media (max-width: 800px) {
+        padding: 50px 0 70px 50px;
+    }
+    @media (max-width: 600px) {
+        padding: 40px 0 60px 20px;
+    }
     &:hover {
         background-color: #E7E7E9;
 
@@ -47,6 +51,9 @@
         font-size: 30px;
         font-family: $v;
         text-transform: uppercase;
+        @media (max-width: 600px) {
+            font-size: 24px;
+        }
     }
 
     &__position {
@@ -54,10 +61,16 @@
         color: $grey;
         font-weight: 700;
         font-style: italic;
+        @media (max-width: 600px) {
+            font-size: 20px;
+        }
     }
 
     &__contacts {
         padding: 50px 0;
+        @media (max-width: 600px) {
+            padding: 20px 0;
+        }
     }
 
 
@@ -81,6 +94,12 @@
             &:before {
                 display: block;
                 margin: 0 auto;
+            }
+            @media (max-width: 600px) {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 20px;
             }
         }
     }
@@ -140,6 +159,9 @@
 
     &:not(:last-child) {
         margin-bottom: 26px;
+        @media (max-width: 600px) {
+            margin-bottom: 15px;
+        }
     }
 
     &-title {
