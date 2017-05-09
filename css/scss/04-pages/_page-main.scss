@@ -82,6 +82,13 @@
 
     @media (max-width: 599px) {
         .links-column {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .links-column {
             padding-left: 25px;
             padding-right: 25px;
         }
